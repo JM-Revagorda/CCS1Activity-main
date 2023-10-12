@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flea In A Jar</title>
+        <style>
+            @keyframes onloadanimheader{
+                from{
+                    transform: translateX(-100%);
+                    opacity: 0;;
+                }
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            *{
+                font-family: Arial, helvetica;
+            }
+            .moving{
+                position: absolute;
+            }
+                .sticker1{top: 90%;}
+            body{
+                display: grid;
+                grid-template-rows: auto auto auto;
+            }
+            .header, .content, .footer{
+                border: 1px solid black;
+            }
+            .header {
+                border-radius: 5px;
+                display: grid;
+                grid-template: 'dat1'
+                               'dat2'
+                               'dat3';
+                background-image: url('images/headertemp2.png');
+                background-position: 50% 66%;
+                background-repeat: no-repeat;
+                background-size: 99.9% 150%;
+            }
+                .click{
+                    color: white;
+                    font-size: 50px;
+                    position: absolute;
+                    transition: text-shadow 0.3s;
+                }
+                    .ar1{
+                        top: 40%;
+                        left: 5%;
+                    }
+                    .ar2{
+                        top: 40%;
+                        right: 5%;
+                    }
+                    .click:hover{
+                        cursor:pointer;
+                        text-shadow: 0 0 5px gray;
+                    }
+                #dat1, #dat2, #dat3{
+                    margin: 0px;
+                    /* border: 1px solid palevioletred; */
+                }
+                    .dots{
+                        height: 15px;
+                        width: 15px;
+                        background-color: #bbb;
+                        border-radius: 50%;
+                        display: inline-block;
+                        margin: 0 10px;
+                        transition: 0.3s;
+                    }
+                        .dots:hover{
+                            width: 20px;
+                            height: 20px;
+                            cursor: pointer;
+                            background-color: white;
+                        }
+                /* #dat1{padding: 2% 0;} */
+                #dat2{
+                    padding: 0 0 0 5%;
+                }
+                #dat2 h1, p{
+                    animation: onloadanimheader 0.7s ease-in-out;
+                }
+                /* #dat3{padding: 0 0;} */
+                    .menu{
+                        list-style-type: none;
+                    }
+                    .menu li:hover{
+                        background-color: gray;
+                        color: white;
+                    }
+                    li{
+                        color: white;
+                        float: right;
+                        display: block;
+                        padding: 30px 40px;
+                        transition: 0.3s;
+                    }
+                    a{
+                        color: white;
+                        text-decoration: none;
+                    }
+
+            .content{
+                padding: 10% 0%;
+                display: grid;
+                grid-template: '.image' '.text';
+            }
+                .image{
+                    /* padding: 30% 20%; */
+                }
+                .text{
+                    padding: 5% 5%;
+                }
+            /* .footer {padding: 5% 0;} */
+        </style>
+    </head>
+<body>
+    <div class="moving sticker1"><img src="images/sticker1.png" width="15%"></div>
+    <div class="header">
+        <!-- <div class="click ar1"><p>&lt;</p></div> -->
+        <div class="click ar2"><p>&gt;</p></div>
+        <div id="dat1"><img src="images/flea logo final.png" width="6%" style="position: relative; left: 1%; top: 10%"></div>
+        <div id="dat2" style="line-height: 40px; font-family: Arial, helvetica;">
+            <!-- <center> -->
+                <h1 style="font-size: 140px; text-shadow: 5px 5px 5px black; color: #a8030a;">Flea in a jar</h1>
+                <br/>
+                <br/>
+                <br/>
+                <p style="letter-spacing: 20px; color: #a8030a; font-size: 16px;"><b>TUKMA SOLO EXHIBITION 2023</b></p>
+                <br/>
+                <p style="color: white;">
+                    Unleash the jar, Unleash the flea<br/>
+                    A reminder to others who are still caught like fleas in a jar
+                </p>
+            <!-- </center> -->
+            <div style="text-align: center;">
+                <span class="dots"></span>
+                <span class="dots"></span>
+                <span class="dots"></span>
+            </div>
+        </div>
+        <div id="dat3">
+            <ul class="menu">
+                <li><a href="map.html">MAP</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><u>HOME</u></li>
+            </ul>
+        </div>
+    </div>
+    <div class="content">
+        <div class="image">
+            <img src="images/annonymous (2).png" width="80%">
+        </div>
+        <div class="text">
+            <h1>Artist's Statement</h1>
+            <hr/>
+            <p>
+                A sense of hopelessness, pressure, and
+                despair— Flea in a jar is an experiment
+                where fleas are trapped inside a jar and
+                will jump repeatedly until they learn
+                that hitting the lid is painful. When the
+                lid is removed, they will only jump as
+                high as the lid. Dealing with mental
+                health alone, one feels they are confined
+                to a tight space and are unable to move.
+                Constantly jumping from one problem
+                to another, unable to break free of this
+                never-ending loop.<br/>
+                <br/>
+                Flea in a jar a series focuses on one
+                anonymous red subject, a crumpled
+                paper cutout. The series features
+                dissociation from reality, a sensation of
+                alienation from oneself and one's
+                surroundings. a space where you can
+                express your feelings<br/>
+                <br/>
+                This is our catharsis to reduce stigma
+                and educate the public. And a reminder
+                to others who are still caught like fleas
+                in a jar.<br/>
+        </div>
+    </div>
+    <div class="footer">
+        <p style="text-align: center;">
+            Jo-Ri Designs. Made with love. © 2023
+        </p>
+    </div>
+</body>
+</html>
